@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Alert, View, Text, Image, TextInput, Button, ScrollView, StyleSheet } from 'react-native';
 
 export default function ProfilStatique() {
-  // 👇 Create a state variable for "nom"
+  
   const [nom, setNom] = useState('');
 
   return (
@@ -20,7 +20,7 @@ export default function ProfilStatique() {
         placeholder="Entrez votre nom"
         editable={true}
         value={nom}
-        onChangeText={setNom}   // 👈 updates state when typing
+        onChangeText={setNom}   
       />
 
       <Text style={styles.label}>Message :</Text>
